@@ -11,6 +11,10 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 import re
 from nltk.stem import WordNetLemmatizer
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 # Read the dataset
 df = pd.read_csv("reviews.csv", lineterminator='\n', header=0)
